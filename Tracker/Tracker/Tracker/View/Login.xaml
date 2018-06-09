@@ -23,6 +23,11 @@
 
                 <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand" Orientation="Horizontal">
                     <Label Text="Forget password? " TextColor="#0099ff">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="OnForgetPasswordClicked"
+                                NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
                     </Label>
                     <Label Text="Sign Up" TextColor="#0099ff">
                         <Label.GestureRecognizers>

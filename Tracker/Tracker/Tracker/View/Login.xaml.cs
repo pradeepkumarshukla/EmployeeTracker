@@ -27,5 +27,9 @@ namespace Tracker.View
             viewModel._navigationService.NavigateTo(App.Registration);
         }
 
+        public void OnForgetPasswordClicked(Object sender, EventArgs e)
+        {
+            viewModel._navigationService.NavigateTo(App.ForgetPassword);
+        }
     }
 }

@@ -36,5 +36,17 @@ namespace Tracker.ViewModel
             _dialogService = dialogService;
 
         }
+
+        public void nonEmptyField()
+        {
+            if ((string.IsNullOrEmpty(Email_Id)))
+            {
+                _dialogService.ShowMessage("Email Id is Required.", "Alert");
+            }
+            else
+            {
+                _navigationService.GoBack();
+            }
+        }
     }
 }

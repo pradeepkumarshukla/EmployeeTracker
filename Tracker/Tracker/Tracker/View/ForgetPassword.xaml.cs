@@ -24,7 +24,7 @@ namespace Tracker.View
 
         public void OnSendClick(Object sender, EventArgs e)
         {
-            viewModel._navigationService.NavigateTo(App.Login);
+            viewModel.nonEmptyField();
         }
 
     }
