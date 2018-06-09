@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Title="Sign Up"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tracker.View.Registration">
+    <ContentPage.Content>
+
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="75*" />
+                <RowDefinition Height="15*" />
+            </Grid.RowDefinitions>
+
+            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand" Orientation="Horizontal" Grid.Row="0">
+                <Image Source="logo.png" Aspect="AspectFit"/>
+            </StackLayout>
+
+            <StackLayout Padding="10,20,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="1" Orientation="Vertical">
+                <Label Text="Name" TextColor="Black"></Label>
+                <Entry Text="{Binding Name}" />
+                <Label Text="Employee Id" TextColor="Black"></Label>
+                <Entry Text="{Binding EmployeeId}" />
+                <Label Text="Contact No." TextColor="Black"></Label>
+                <Entry Text="{Binding ContactNumber}" />
+                <Label Text="Password" TextColor="Black"></Label>
+                <Entry Text="{Binding Password}" IsPassword="True" />
+                <Label Text="Confirm Password" TextColor="Black"></Label>
+                <Entry Text="{Binding ConfirmPassword}" IsPassword="True" />
+            </StackLayout>
+
+            <StackLayout Padding="30" HorizontalOptions="FillAndExpand" VerticalOptions="End" Grid.Row="2">
+                <Button Text="Sign Up" BackgroundColor="#2eb82e" Clicked="OnSignUpClicked"/>
+            </StackLayout>
+
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

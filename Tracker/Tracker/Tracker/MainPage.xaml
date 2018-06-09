@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:Tracker"
+             x:Class="Tracker.MainPage">
+
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="20*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="0">
+            <Image Source="logo.png" />
+        </StackLayout>
+
+        <StackLayout Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="1" Orientation="Vertical">
+            <Entry Placeholder="User Id" />
+            <Entry Placeholder="Password" />
+            <Button Text="Login" BackgroundColor="#2eb82e"></Button>
+            
+            <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <Label Text="Forget password? " TextColor="#0099ff"></Label>
+                <Label Text="Sign Up" TextColor="#0099ff"></Label>
+            </StackLayout>            
+            
+        </StackLayout>
+
+        <Label Text="Happy To Help" HorizontalTextAlignment="Center" Grid.Row="2" VerticalOptions="End" TextColor="Black"></Label>
+
+    </Grid>
+    <!--    
+    <StackLayout VerticalOptions="StartAndExpand" Padding="30">
+        <maps:Map WidthRequest="320" HeightRequest="200"
+            x:Name="MyMap"
+            MapType="Hybrid"
+        />
+    </StackLayout>    
+    -->    
+
+</ContentPage>
