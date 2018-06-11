@@ -14,6 +14,7 @@ namespace Tracker
         public const string Login = "Login";
         public const string Registration = "Registration";
         public const string ForgetPassword = "ForgetPassword";
+        public const string MainMapPage = "MainMapPage";
         public App ()
 		{
 			InitializeComponent();

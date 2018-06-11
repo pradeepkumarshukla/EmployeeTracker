@@ -19,7 +19,7 @@
             <StackLayout Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="1" Orientation="Vertical">
                 <Entry Placeholder="User Id" />
                 <Entry Placeholder="Password" />
-                <Button Text="Login" BackgroundColor="#2eb82e"></Button>
+                <Button Text="Login" BackgroundColor="#2eb82e" Clicked="OnLoginClicked"></Button>
 
                 <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="FillAndExpand" Orientation="Horizontal">
                     <Label Text="Forget password? " TextColor="#0099ff">

@@ -31,5 +31,10 @@ namespace Tracker.View
         {
             viewModel._navigationService.NavigateTo(App.ForgetPassword);
         }
+
+        public void OnLoginClicked(Object sender, EventArgs e)
+        {
+            viewModel._navigationService.NavigateTo(App.MainMapPage);
+        }
     }
 }

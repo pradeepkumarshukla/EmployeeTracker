@@ -24,6 +24,8 @@ namespace GoogleMapProject.Helper
             SimpleIoc.Default.Register<RegistrationViewModel>();
 
             SimpleIoc.Default.Register<ForgetPasswordViewModel>();
+
+            SimpleIoc.Default.Register<MainMapPageViewModel>();
         }
 
         public LoginViewModel LoginView
@@ -50,6 +52,13 @@ namespace GoogleMapProject.Helper
             }
         }
 
+        public MainMapPageViewModel MainMapPageView
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<MainMapPageViewModel>();
+            }
+        }
 
         private INavigationService CreateNavigationService()
         {
@@ -57,6 +66,7 @@ namespace GoogleMapProject.Helper
             navigationService.Configure(App.Login, typeof(Login));
             navigationService.Configure(App.Registration, typeof(Registration));
             navigationService.Configure(App.ForgetPassword, typeof(ForgetPassword));
+            navigationService.Configure(App.MainMapPage, typeof(MainMapPage));
             return navigationService;
         }
     }
