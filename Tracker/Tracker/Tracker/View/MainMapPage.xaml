@@ -5,11 +5,56 @@
              x:Class="Tracker.View.MainMapPage">
     <ContentPage.Content>
 
+        <!--<Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="80*" />
+                <RowDefinition Height="10*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            --><!--<StackLayout   Padding="10"
+                  Grid.Row="0" Grid.Column="0"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"
+                 Orientation="Vertical">
+                <Entry Text="{Binding Location1}"/>
+
+            </StackLayout>--><!--
+            <StackLayout   Padding="10"
+                  Grid.Row="1" Grid.Column="0"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="FillAndExpand"
+                 Orientation="Vertical">
+                <maps:Map WidthRequest="320" HeightRequest="350"
+            x:Name="MyMap"
+            IsShowingUser="true"
+            MapType="Street"
+            HasZoomEnabled="True" />
+            </StackLayout>
+            
+            <StackLayout HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Orientation="Vertical"
+                  Grid.Row="1" Grid.Column="0">
+                <Button Text="Show Current Location"
+                Clicked="OnShowMapClicked">
+
+                </Button>
+            </StackLayout>
+        </Grid>-->
+
         <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Padding="30">
             <maps:Map WidthRequest="320" HeightRequest="350"
             x:Name="MyMap"
-            MapType="Hybrid" />
+            IsShowingUser="True"
+            MapType="Street" />
+            <!--<Label x:Name="txtlat" />
+            <Label x:Name="txtlong" />-->
         </StackLayout>
-
+        
     </ContentPage.Content>
 </ContentPage>
